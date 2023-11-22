@@ -1,0 +1,152 @@
+[
+  {
+    "keychord": "a",
+    "name": "Applications",
+    "value": [
+      {
+        "keychord": "s",
+        "name": "Slack",
+        "value": "open -a slack"
+      },
+      {
+        "keychord": "t",
+        "name": "Teams",
+        "value": "open -a teams"
+      },
+      {
+        "keychord": "f",
+        "name": "FireFox",
+        "value": "open -a firefox"
+      }
+    ]
+  },
+  {
+    "keychord": "b",
+    "name": "Bookmarks",
+    "value": [
+      {
+        "keychord": "r",
+        "name": "RedRobin",
+        "value": [
+          {
+            "keychord": "a",
+            "name": "Dev1 EN",
+            "value": "open https://dev1.vcare.pl/p/medicinska-teamet/testmottagning/triage?isPerformer=true&languageCode=en"
+          },
+          {
+            "keychord": "b",
+            "name": "Dev1 SV",
+            "value": "open https://dev1.vcare.pl/p/medicinska-teamet/testmottagning/triage?isPerformer=true&languageCode=sv"
+          },
+          {
+            "keychord": "c",
+            "name": "Stage EN",
+            "value": "open https://stage-service.visibacare.com/p/medicinska-teamet-stage/medicinska-teamet/triage?isPerformer=true&languageCode=en"
+          },
+          {
+            "keychord": "d",
+            "name": "Stage SV",
+            "value": "open https://stage-service.visibacare.com/p/medicinska-teamet-stage/medicinska-teamet/triage?isPerformer=true&languageCode=sv"
+          }
+        ]
+      },
+      {
+        "keychord": "j",
+        "name": "Jira",
+        "value": [
+          {
+            "keychord": "d",
+            "name": "RedRobin development board",
+            "value": "open https://visibacare.atlassian.net/jira/software/c/projects/RR/boards/93"
+          },
+          {
+            "keychord": "r",
+            "name": "RedRobin refinement board",
+            "value": "open https://visibacare.atlassian.net/jira/software/c/projects/RR/boards/70"
+          },
+          {
+            "keychord": "i",
+            "name": "Issues reported by me",
+            "value": "open https://visibacare.atlassian.net/jira/software/c/projects/RR/issues/?filter=reportedbyme"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keychord": "l",
+    "name": "Lock screen",
+    "value": "open -a /System/Library/CoreServices/ScreenSaverEngine.app"
+  },
+  {
+    "keychord": "n",
+    "name": "Create notification",
+    "value": "osascript -e 'display notification \"Arpeggio\" with title \"Arpeggio!\" subtitle \"Best command runner ever\" sound name \"default\"'"
+  },
+  {
+    "keychord": "v",
+    "name": "Set volume",
+    "value": [
+      {
+        "keychord": "0",
+        "name": "Set volume to 0%",
+        "value": "osascript -e 'set volume output volume 0'"
+      },
+      {
+        "keychord": "1",
+        "name": "Set volume to 10%",
+        "value": "osascript -e 'set volume output volume 10'"
+      },
+      {
+        "keychord": "2",
+        "name": "Set volume to 20%",
+        "value": "osascript -e 'set volume output volume 20'"
+      },
+      {
+        "keychord": "3",
+        "name": "Set volume to 30%",
+        "value": "osascript -e 'set volume output volume 30'"
+      },
+      {
+        "keychord": "4",
+        "name": "Set volume to 40%",
+        "value": "osascript -e 'set volume output volume 40'"
+      },
+      {
+        "keychord": "5",
+        "name": "Set volume to 50%",
+        "value": "osascript -e 'set volume output volume 50'"
+      },
+      {
+        "keychord": "6",
+        "name": "Set volume to 60%",
+        "value": "osascript -e 'set volume output volume 60'"
+      },
+      {
+        "keychord": "7",
+        "name": "Set volume to 70%",
+        "value": "osascript -e 'set volume output volume 70'"
+      },
+      {
+        "keychord": "8",
+        "name": "Set volume to 80%",
+        "value": "osascript -e 'set volume output volume 80'"
+      },
+      {
+        "keychord": "9",
+        "name": "Set volume to 90%",
+        "value": "osascript -e 'set volume output volume 90'"
+      },
+      {
+        "keychord": "m",
+        "name": "Set volume to 100%",
+        "value": "osascript -e 'set volume output volume 100'"
+      }
+    ]
+  },
+  {
+    "keychord": "q",
+    "name": "Quit",
+    "value": "echo Quitting"
+  }
+]
