@@ -9,8 +9,8 @@ use std::rc::Rc;
 use std::str::FromStr;
 use window_vibrancy::*;
 
-const COLOR_PINE: &str = "#286983";
-const COLOR_LOVE: &str = "#b4637a";
+const COLOR_COMMAND: &str = "#448895";
+const COLOR_LAYER: &str = "#d77059";
 const ESCAPE: &str = "escape";
 
 fn main() {
@@ -40,8 +40,8 @@ fn app(cx: Scope) -> Element {
     let _ = apply_vibrancy(
         window.webview.window(),
         NSVisualEffectMaterial::HudWindow,
-        None,
-        None,
+        Some(NSVisualEffectState::Active),
+        Some(5.0),
     )
     .expect("Unsupported platform! 'apply_vibrancy' is only supported on macOS");
 
@@ -141,7 +141,7 @@ struct KeyProps {
 fn KeyItem(cx: Scope<KeyProps>) -> Element {
     cx.render(rsx! {
         div {
-            color: if cx.props.is_layer { COLOR_LOVE } else { COLOR_PINE },
+            color: if cx.props.is_layer { COLOR_LAYER } else { COLOR_COMMAND },
             margin: "5px",
             "{cx.props.keychord} --> {cx.props.name}"
         }
@@ -164,7 +164,6 @@ fn make_config() -> dioxus_desktop::Config {
             overflow: hidden;
         }
         #main, #bodywrap {
-            background-color: rbga(250, 0, 0, 0);
             height: 100%;
             margin: 0;
             overscroll-behavior-x: none;
@@ -182,8 +181,8 @@ fn make_window() -> WindowBuilder {
         .with_always_on_top(true)
         .with_visible(true)
         .with_transparent(true)
-        .with_decorations(true)
+        .with_decorations(false)
         .with_resizable(false)
-        .with_position(PhysicalPosition::new((3440 - 1000) / 2, (1440 - 500) / 2))
-        .with_inner_size(LogicalSize::new(1000, 500))
+        .with_position(PhysicalPosition::new((3440 - 800) / 2, (1440 - 500) / 2))
+        .with_inner_size(LogicalSize::new(800, 500))
 }
