@@ -119,12 +119,12 @@ fn update_shortcuts(
         .unwrap();
 }
 
-fn run_command(command: &str) {
+fn run_command(command: &str) -> std::process::Child {
     let parts: Vec<&str> = command.split_whitespace().collect();
     Command::new(parts[0])
         .args(&parts[1..])
-        .output()
-        .expect("failed to run command");
+        .spawn()
+        .expect("failed to run command")
 }
 
 #[derive(PartialEq, Props)]
