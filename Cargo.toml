@@ -11,3 +11,5 @@ dioxus-desktop = { git = "https://github.com/DioxusLabs/dioxus.git" }
 dirs = "5.0.1"
 serde = "1.0.193"
 serde_json = "1.0.108"
+window-vibrancy = "0.4.3"
+wry = { version = "*", features = ["transparent"] }

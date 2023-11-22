@@ -7,6 +7,7 @@ use serde::Deserialize;
 use std::process::Command;
 use std::rc::Rc;
 use std::str::FromStr;
+use window_vibrancy::*;
 
 const COLOR_PINE: &str = "#286983";
 const COLOR_LOVE: &str = "#b4637a";
@@ -34,6 +35,16 @@ struct KeyEntry {
 
 fn app(cx: Scope) -> Element {
     let window = use_window(cx);
+
+    #[cfg(target_os = "macos")]
+    let _ = apply_vibrancy(
+        window.webview.window(),
+        NSVisualEffectMaterial::HudWindow,
+        None,
+        None,
+    )
+    .expect("Unsupported platform! 'apply_vibrancy' is only supported on macOS");
+
     let key_mapping: &UseState<Vec<KeyEntry>> = use_state(cx, load_key_mapping);
     let path: &UseRef<Vec<String>> = use_ref(cx, Vec::new);
     let mut active_layer = &*key_mapping.current();
@@ -153,8 +164,8 @@ fn make_config() -> dioxus_desktop::Config {
             overflow: hidden;
         }
         #main, #bodywrap {
+            background-color: rbga(250, 0, 0, 0);
             height: 100%;
-            background-color: #fffaf3;
             margin: 0;
             overscroll-behavior-x: none;
             overscroll-behavior-y: none;
