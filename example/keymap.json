@@ -1,0 +1,245 @@
+[
+  {
+    "keychord": "a",
+    "name": "Applications",
+    "value": [
+      {
+        "keychord": "enter",
+        "name": "Terminal",
+        "value": "open -a wezterm"
+      },
+      {
+        "keychord": "s",
+        "name": "Slack",
+        "value": "open -a slack"
+      },
+      {
+        "keychord": "t",
+        "name": "Teams",
+        "value": "open -a teams"
+      },
+      {
+        "keychord": "f",
+        "name": "FireFox",
+        "value": "open -a firefox"
+      },
+      {
+        "keychord": "shift+f",
+        "name": "Finder",
+        "value": "open -a finder"
+      }
+    ]
+  },
+  {
+    "keychord": "n",
+    "name": "Applications, new window",
+    "value": [
+      {
+        "keychord": "enter",
+        "name": "Terminal",
+        "value": "open -na wezterm"
+      },
+      {
+        "keychord": "s",
+        "name": "Slack",
+        "value": "open -na slack"
+      },
+      {
+        "keychord": "t",
+        "name": "Teams",
+        "value": "open -na teams"
+      },
+      {
+        "keychord": "f",
+        "name": "FireFox",
+        "value": "open -na firefox"
+      },
+      {
+        "keychord": "shift+f",
+        "name": "Finder",
+        "value": "open -na finder"
+      }
+    ]
+  },
+  {
+    "keychord": "b",
+    "name": "Bookmarks",
+    "value": [
+      {
+        "keychord": "g",
+        "name": "RedRobinAI pull requests",
+        "value": "open https://github.com/VisibaCare/RedRobinAI"
+      },
+      {
+        "keychord": "r",
+        "name": "RedRobin",
+        "value": [
+          {
+            "keychord": "a",
+            "name": "Dev1 EN",
+            "value": "open https://dev1.vcare.pl/p/medicinska-teamet/testmottagning/triage?isPerformer=true&languageCode=en"
+          },
+          {
+            "keychord": "b",
+            "name": "Dev1 SV",
+            "value": "open https://dev1.vcare.pl/p/medicinska-teamet/testmottagning/triage?isPerformer=true&languageCode=sv"
+          },
+          {
+            "keychord": "c",
+            "name": "Stage EN",
+            "value": "open https://stage-service.visibacare.com/p/medicinska-teamet-stage/medicinska-teamet/triage?isPerformer=true&languageCode=en"
+          },
+          {
+            "keychord": "d",
+            "name": "Stage SV",
+            "value": "open https://stage-service.visibacare.com/p/medicinska-teamet-stage/medicinska-teamet/triage?isPerformer=true&languageCode=sv"
+          }
+        ]
+      },
+      {
+        "keychord": "j",
+        "name": "Jira",
+        "value": [
+          {
+            "keychord": "d",
+            "name": "RedRobin development board",
+            "value": "open https://visibacare.atlassian.net/jira/software/c/projects/RR/boards/93"
+          },
+          {
+            "keychord": "r",
+            "name": "RedRobin refinement board",
+            "value": "open https://visibacare.atlassian.net/jira/software/c/projects/RR/boards/70"
+          },
+          {
+            "keychord": "i",
+            "name": "Issues reported by me",
+            "value": "open https://visibacare.atlassian.net/jira/software/c/projects/RR/issues/?filter=reportedbyme"
+          }
+        ]
+      },
+      {
+        "keychord": "a",
+        "name": "Apollo RedRobin PSUR Dashboard",
+        "value": "open https://app.powerbi.com/groups/d4add714-2d16-4cca-a221-e99a9dafc7ec/reports/2544d96f-5665-4abd-99e2-0a3295fb9930/ReportSection0eb7e08f02562928c020?experience=power-bi"
+      },
+      {
+        "keychord": "c",
+        "name": "Confluence",
+        "value": [
+          {
+            "keychord": "t",
+            "name": "RedRobin technical documentation",
+            "value": "open https://visibacare.atlassian.net/wiki/spaces/TDRR/overview"
+          },
+          {
+            "keychord": "p",
+            "name": "Product Development",
+            "value": "open https://visibacare.atlassian.net/wiki/spaces/PDN/overview"
+          },
+          {
+            "keychord": "v",
+            "name": "Visiba Management System",
+            "value": "open https://visibacare.atlassian.net/wiki/spaces/QMS2/overview"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keychord": "l",
+    "name": "Lock screen",
+    "value": "open -a /System/Library/CoreServices/ScreenSaverEngine.app"
+  },
+  {
+    "keychord": "o",
+    "name": "Create notification",
+    "value": "osascript -e 'display notification \"Arpeggio\" with title \"Arpeggio!\" subtitle \"Best command runner ever\" sound name \"default\"'"
+  },
+  {
+    "keychord": "v",
+    "name": "Set volume",
+    "value": [
+      {
+        "keychord": "0",
+        "name": "Set volume to 0%",
+        "value": "osascript -e 'set volume output volume 0'"
+      },
+      {
+        "keychord": "1",
+        "name": "Set volume to 10%",
+        "value": "osascript -e 'set volume output volume 10'"
+      },
+      {
+        "keychord": "2",
+        "name": "Set volume to 20%",
+        "value": "osascript -e 'set volume output volume 20'"
+      },
+      {
+        "keychord": "3",
+        "name": "Set volume to 30%",
+        "value": "osascript -e 'set volume output volume 30'"
+      },
+      {
+        "keychord": "4",
+        "name": "Set volume to 40%",
+        "value": "osascript -e 'set volume output volume 40'"
+      },
+      {
+        "keychord": "5",
+        "name": "Set volume to 50%",
+        "value": "osascript -e 'set volume output volume 50'"
+      },
+      {
+        "keychord": "6",
+        "name": "Set volume to 60%",
+        "value": "osascript -e 'set volume output volume 60'"
+      },
+      {
+        "keychord": "7",
+        "name": "Set volume to 70%",
+        "value": "osascript -e 'set volume output volume 70'"
+      },
+      {
+        "keychord": "8",
+        "name": "Set volume to 80%",
+        "value": "osascript -e 'set volume output volume 80'"
+      },
+      {
+        "keychord": "9",
+        "name": "Set volume to 90%",
+        "value": "osascript -e 'set volume output volume 90'"
+      },
+      {
+        "keychord": "m",
+        "name": "Set volume to 100%",
+        "value": "osascript -e 'set volume output volume 100'"
+      }
+    ]
+  },
+  {
+    "keychord": "w",
+    "name": "Windows",
+    "value": [
+      {
+        "keychord": "f",
+        "name": "Float windows",
+        "value": "yabai -m space --layout float"
+      },
+      {
+        "keychord": "t",
+        "name": "Tile windows",
+        "value": "yabai -m space --layout bsp"
+      },
+      {
+        "keychord": "s",
+        "name": "Stack windows",
+        "value": "yabai -m space --layout stack"
+      }
+    ]
+  },
+  {
+    "keychord": "q",
+    "name": "Quit",
+    "value": "echo Quitting"
+  }
+]
