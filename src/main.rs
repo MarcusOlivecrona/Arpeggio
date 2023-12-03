@@ -41,7 +41,7 @@ fn app(cx: Scope) -> Element {
         window.webview.window(),
         NSVisualEffectMaterial::HudWindow,
         Some(NSVisualEffectState::Active),
-        Some(5.0),
+        Some(10.0),
     )
     .expect("Unsupported platform! 'apply_vibrancy' is only supported on macOS");
 
@@ -120,9 +120,9 @@ fn update_shortcuts(
 }
 
 fn run_command(command: &str) -> std::process::Child {
-    let parts: Vec<&str> = command.split_whitespace().collect();
-    Command::new(parts[0])
-        .args(&parts[1..])
+    Command::new("sh")
+        .arg("-c")
+        .arg(command)
         .spawn()
         .expect("failed to run command")
 }
